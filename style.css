@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.top {
+    width: 100%;
+    min-height: 60vh;
+    background-image: url(https://i.pinimg.com/736x/eb/81/12/eb811228fd43440632ea15edb769a1d9.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.top .overlay {
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, 0.296);
+}
+
+.text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding: 0 10vh;
+    color: white;
+    bottom: 5%;
+}
+
+.text h1 {
+    font-weight: 600;
+    font-size: 4vw;
+}
+
+.text .image {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgUzAwNsoiyH_QXLqOxQvQOCk4Dxhrnnnd7Q&s);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 220px;
+    margin-right: 20px; /* Space between the image and the text */
+}
+
+.center-text {
+    display: flex;
+    gap: 10px;
+    text-align: left;
+}
+
+.right-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+}
+
+.right-icons i {
+    margin-left: 15px;
+    color: white;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 40vh;
+    background-color: #f8f8f8;
+    padding: 20px;
+    gap: 20px; /* Evenly spaces the items */
+}
+
+.b1, .b2, .b3 {
+    flex: 1; /* Makes each section take up an equal portion of the available space */
+    margin: 10px;
+    min-height: inherit;
+    background-size: cover;
+    background-position: center;
+    color: white; 
+}
+
+.b1 {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX8vyCE6WPAymlqDszJFDjTtbFSLeftCpEyw&s);
+}
+
+.b1 h1, .b1 p {
+    text-align: center;
+    padding: 15px;
+}
+
+.b2 .up {
+    width: 100%;
+    min-height: inherit;
+    background-image: url(https://i.pinimg.com/originals/e3/4d/c3/e34dc34286f9f2f9b0377f34241f2510.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.b2 .down {
+    width: 100%;
+    min-height: 20vh;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ6LARp0EWf2Jvpy-u5oCvfgpap1WEL0szyg&s);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.b2 .down .overlay {
+    position: absolute;
+    width: 100%;
+    min-height: 20vh;
+    background-color: rgba(255, 255, 255, 0.349);
+}
+
+.b3 {
+    display: flex;
+    flex-direction: column;
+    background-image: url(https://img.freepik.com/free-photo/beautiful-girl-standing-boat-looking-mountains-ratchaprapha-dam-khao-sok-national-park-surat-thani-province-thailand_335224-849.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.b3 .overlay {
+    background-color: rgba(0, 0, 0, 0.7); /* Darker background for better text visibility */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@media(max-width: 500px) {
+    .text {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+   .text h1{
+    font-size: 5vh;
+   }
+   .text .image{
+    height: 200px;
+    width: 140px;
+    margin-top: 20px;
+   }
+ 
+   .rtext p{
+    margin-top: 10px;
+   }
+   .right-icons{
+    margin-top: 10px;
+   }
+   .bottom{
+    flex-direction: column;
+    align-items: flex-start;
+   }
+   .b1{
+    width:100%;
+   }
+   .b2{
+    width: 100%;
+   }
+   .b3{
+    width: 100%;
+   }
